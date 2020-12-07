@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+
+		<meta charset="UTF-8" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+		<title>Home</title>
+
+		<link rel="stylesheet" href="style.css" />
+
+		<script src="home.js"></script>
+
+	</head>
+
+	<body>
+		<div class="bod">
+            
+            
+			<header>
+			
+                <img src="bug.png" class="bugcon"/>
+				<h2>BugMe Issue Tracker</h2>
+				
+			</header>
+
+           
+			<div class="sidebar">
+                
+				<a>
+                    <div class="Home pageColor">
+                        <p>
+					       <img src="house.png" class="sidecon"/>Home
+                        </p>
+				    </div>
+                </a>
+				
+                <a href="AddUser.html">
+                    <div class="AddUser hover">
+                        <p>
+					       <img src="adduser.png" class="sidecon"/>Add User
+                        </p>
+				    </div>
+                </a>
+				
+                <a href="NewIssue.html">
+                    <div class="NewIssue hover">
+                        <p>
+					       <img src="newIssue.png" class="sidecon"/>New Issue
+                        </p>
+				    </div>
+                </a>
+                
+				<a href="index.html">
+                    <div class="Logout hover">
+                        <p>
+					       <img src="logout.png" class="sidecon"/>Logout
+                        </p>
+				    </div>
+                </a>
+                
+			</div>
+
+			<div class="mainContent">
+                <div>
+                <div class="newis"><a href="NewIssue.html"><button class="subgreen">Create New Issue</button></a></div>
+                	<h1>
+                	<b>	Issues</b>
+                	</h1>
+                	<br>
+                
+                	<h3>
+                		<b>Filter by: <button id="bth1" class="sub2" onclick="Allissues()">ALL</button>&emsp;
+						<button id="bth2" class="sub2" onclick="listopen()">OPEN</button>&emsp;
+						<button id="bth3" class="sub2" onclick="listmyticket()">MY TICKETS</button></b>
+                	</h3>
+                </div>
+                <div id="active">
+                	
+                </div>
+                
+			</div>
+		</div>
+	</body>
+
+</html>

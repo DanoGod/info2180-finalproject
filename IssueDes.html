@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+
+		<meta charset="UTF-8" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+		<title>Home</title>
+
+		<link rel="stylesheet" href="style.css" />
+
+		<script src="home.js"></script>
+
+	</head>
+
+	<body>
+		<div class="bod">
+            
+            
+			<header>
+			
+                <img src="bug.png" class="bugcon"/>
+				<h2>BugMe Issue Tracker</h2>
+				
+			</header>
+
+         
+			<div class="sidebar">
+                
+				<a>
+                    <div class="Home pageColor">
+                        <p>
+					       <img src="house.png" class="sidecon"/>Home
+                        </p>
+				    </div>
+                </a>
+				
+                <a href="AddUser.html">
+                    <div class="AddUser hover">
+                        <p>
+					       <img src="adduser.png" class="sidecon"/>Add User
+                        </p>
+				    </div>
+                </a>
+				
+                <a href="NewIssue.html">
+                    <div class="NewIssue hover">
+                        <p>
+					       <img src="newIssue.png" class="sidecon"/>New Issue
+                        </p>
+				    </div>
+                </a>
+                
+				<a href="index.html">
+                    <div class="Logout hover">
+                        <p>
+					       <img src="logout.png" class="sidecon"/>Logout
+                        </p>
+				    </div>
+                </a>
+                
+			</div>
+
+            
+			<div class="mainContent">
+                
+              
+                <div class="title">
+                    <h1 id="issueTitle">Bug </h1>
+                    <h5 id="issueNum">Issue #0012</h5>
+                </div>
+             
+                <div class="descArea">
+                    
+                   
+                    <p id="issueDesc">
+                        When an issue is clicked it will open and show the full details of the Issue
+						These details should include the Title, Description, Type, Priority, Status, Date
+						Created and by whom, Date last updated, as well as who it is assigned to. 
+                    </p>
+                    <br/>
+                    
+                  
+                    <ul id="updateList">
+                        <li><p class="fontOpacity">Something have changed </p></li>
+                        
+                        <li><p class="fontOpacity">Bug Bug!!</p></li>
+                    </ul>
+                    
+                </div>
+                
+                
+                
+                <div class="rightPanel">
+                    
+                    
+                    <div class="specsArea">
+                        
+                        <label>Assigned To:</label>
+                        <br/>
+                        <label id="assigned" class="info">Vaughnii</label>
+                        <br/><br/>
+                        
+                        <label>Type:</label>
+                        <br/>
+                        <label id="type" class="info">Proposal</label>
+                        <br/><br/>
+                        
+                        <label>Priority:</label>
+                        <br/>
+                        <label id="priority" class="info">Major</label>
+                        <br/><br/>
+                        
+                        <label>Status:</label>
+                        <br/>
+                        <label id="status" class="info">Open</label>
+                        <br/><br/>
+                        
+                    </div>
+                    
+                    <button type="button" id="closed" class="issueButton">Mark as Closed</button>
+                    
+                    <button type="button" id="progress" class="issueButton">Mark in Progress</button>
+                    
+                </div>
+                
+			</div>
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+
+		<meta charset="UTF-8" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+		<title>Add User</title>
+			
+
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+		<div class="bod">
+            
+          
+			<header>
+                <img src="bug.png" class="bugcon"/>
+				<h2>BugMe Issue Tracker</h2>
+			</header>
+
+            
+			<div class="sidebar">
+                
+				<a href="Home.html">
+                    <div class="Home hover">
+                        <p>
+					       <img src="house.png" class="sidecon"/>Home
+                        </p>
+				    </div>
+                </a>
+				
+                <a>
+                    <div class="AddUser pageColor">
+                        <p>
+					       <img src="adduser.png" class="sidecon"/>Add User
+                        </p>
+				    </div>
+                </a>
+				
+                <a href="NewIssue.html">
+                    <div class="NewIssue hover">
+                        <p>
+					       <img src="newIssue.png" class="sidecon"/>New Issue
+                        </p>
+				    </div>
+                </a>
+                
+				<a href="index.html">
+                    <div class="Logout hover">
+                        <p>
+					       <img src="logout.png" class="sidecon"/>Logout
+                        </p>
+				    </div>
+                </a>
+                
+			</div>
+
+         
+			<div class="mainContent">
+                
+                <h1>New User</h1>
+                <form action= "index.php" method="POST">
+                    <p>FirstName</p>
+                    <input type="text" id="fname" name="firstname" class="addput" required="required">
+
+                    <p>LastName</p>
+                    <input type="text" id="lname" name="lastname" class="addput" required="required">
+
+                    <p>Password</p>
+                    <input type="password" id="passwrd" name="password" class="addput" required="required">
+
+                    <p>Email</p>
+                    <input type="text" id="email" name="email" class="addput" required="required">
+                     <input type="hidden"name="add" value = "all">
+                    
+                    <br>
+                    <br>
+                    <br>
+                    <button type="submit" class="sub" id="sub" name = "submit" onclick="valid()">Submit</button>
+                </form>
+			</div>
+			<div id="status">
+			    
+			</div>
+		</div>
+	</body>
+<script src="index.js"></script>
+
+</html>
